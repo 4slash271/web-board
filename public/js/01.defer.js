@@ -1,0 +1,1 @@
+$('.wrapper').css('background-color','blue');
