@@ -1,0 +1,48 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+/********************** 글로벌 설정 *********************/
+body {
+  font-family: 'Pretendard';
+}
+
+/**********************  *********************/
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: rgb(111, 117, 170);
+  color: #fff;
+}
+.header-wrapper .logo {
+  padding: 0.5em;
+  font-size: 2em;
+}
+.header-wrapper .logo i {
+  font-size: 0.875em;
+}
+.header-wrapper .navi-wrap {
+  display: flex;
+  margin-left: auto;
+}
+.header-wrapper .navi-wrap .navi {
+  padding: 1.5em;
+}
+.header-wrapper .navi-wrap .navi:hover {
+  background-color: rgb(140, 169, 206);
+}
+.header-wrapper .navi-wrap .navi.bt-logout {
+  display: none;
+}
+/********************** 반응형 설정 *********************/
+@media (max-width: 1399px) {
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 575px) {
+}
