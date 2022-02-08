@@ -25,7 +25,12 @@ function onChangeAuth(r){
 
 function onLogOut(){
     console.log("hi");
-    auth.singOut();
+    firebase.auth().signOut().then(() => {
+        // Sign-out successful.
+      }).catch((error) => {
+        // An error happened.
+      });
+      
 }
 
 function onLoginGoogle(){
