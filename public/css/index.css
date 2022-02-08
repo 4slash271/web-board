@@ -88,6 +88,20 @@ body {
   font-size: 0.875em;
   color: #888;
 }
+
+/**********************create-wrapper *********************/
+.create-wrapper {
+  padding: 0.75em 0;
+  display: none;
+}
+.create-wrapper .create-form {
+  display: flex;
+  align-items: center;
+}
+.create-wrapper .create-form input[name='content'] {
+  flex-grow: 1;
+  margin: 0 0.75em;
+}
 /**********************list-wrapper *********************/
 .list-wrapper {
 }
@@ -142,6 +156,17 @@ body {
 }
 
 @media (max-width: 575px) {
+  .create-wrapper .create-form {
+    display: flex;
+    justify-content: center;
+  }
+  .create-wrapper .create-form input {
+    margin: 0.25em 0;
+  }
+  .create-wrapper .create-form input[name='content'] {
+    margin: 0.25em 0;
+  }
+
   .list-wrapper table > thead > tr > :nth-child(4) {
     display: none;
   }

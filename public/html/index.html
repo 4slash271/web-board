@@ -40,16 +40,16 @@
           </li>
         </ul>
     </header>
-    <section class="create-wrapper wrapper">
-      <form class="create-form form-inline">
-        <input type="text" name="writer" class="form-control" placeholder="작성자">
-        <input type="text" name="content" class="form-control" placeholder="글 작성하기">
-        <button class="btn btn-warning">등록</button>
-      </form>
-    </section>
     <section class="title-wrapper">
       <h2 class="title">Firebase를 활용한 글타래 게시판</h2>
       <h3 class="title">Firebase Auth, Database, Storage</h3>
+    </section>
+    <section class="create-wrapper wrapper">
+      <form class="create-form form-inline" onsubmit="return onSubmit(this)">
+        <input type="text" name="writer" class="form-control" placeholder="작성자">
+        <input type="text" name="content" class="form-control" placeholder="글 작성하기" autofocus>
+        <button class="btn btn-secondary">등록</button>
+      </form>
     </section>
     <section class="list-wrapper wrapper">
       <table class="table text-center table-hover border-bottom">
