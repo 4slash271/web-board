@@ -40,9 +40,67 @@
           </li>
         </ul>
     </header>
-    <div class="title-wrapper">
-      
-    </div>
+    <section class="create-wrapper wrapper">
+      <form class="create-form form-inline">
+        <input type="text" name="writer" class="form-control" placeholder="작성자">
+        <input type="text" name="content" class="form-control" placeholder="글 작성하기">
+        <button class="btn btn-warning">등록</button>
+      </form>
+    </section>
+    <section class="title-wrapper">
+      <h2 class="title">Firebase를 활용한 글타래 게시판</h2>
+      <h3 class="title">Firebase Auth, Database, Storage</h3>
+    </section>
+    <section class="list-wrapper wrapper">
+      <table class="table text-center table-hover border-bottom">
+        <thead class="thead-light">
+          <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+            <th>조회수</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>3</td>
+            <td class="text-left">중고거래</td>
+            <td>지지</td>
+            <td>2022-02-08</td>
+            <td>35</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td class="text-left">민원신고</td>
+            <td>슬기</td>
+            <td>2022-02-08</td>
+            <td>285</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td class="text-left">부탁합니다</td>
+            <td>지혜</td>
+            <td>2022-02-08</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+      <nav class="page-wrapper">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link bi-chevron-bar-left" href="#"></a> </li>
+          <li class="page-item"><a class="page-link bi-chevron-double-left" href="#"></a> </li>
+          <li class="page-item"><a class="page-link bi-chevron-left" href="#"></a> </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link bi-chevron-right" href="#"></a></li>
+          <li class="page-item"><a class="page-link bi-chevron-double-right" href="#"></a></li>
+          <li class="page-item"><a class="page-link bi-chevron-bar-right" href="#"></a></li>
+        </ul>
+      </nav>
+    </section>
   </div>
 
   <script src="../js/index.js"></script>

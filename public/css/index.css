@@ -3,8 +3,21 @@
 body {
   font-family: 'Pretendard';
 }
+.wrapper {
+  max-width: 1168px;
+  margin: 0 auto;
+}
+/********************** pagination *********************/
+.pagination {
+  margin-top: 2.5em;
+  justify-content: center;
+}
+.page-item.active .page-link {
+  background-color: rgb(194, 197, 229);
+  border: 1px solid rgb(201, 201, 201);
+}
 
-/**********************  *********************/
+/********************** header-wrapper  *********************/
 .header-wrapper {
   display: flex;
   align-items: center;
@@ -62,14 +75,52 @@ body {
 .header-wrapper .navi-wrap .info-wrap .email {
   font-size: 1.125em;
 }
+/********************** title-wrapper *********************/
+.title-wrapper {
+  margin: 3em 0 2em 0;
+  text-align: center;
+}
+.title-wrapper h2.title {
+  font-size: 1.75em;
+  margin-bottom: 0.5em;
+}
+.title-wrapper h3.title {
+  font-size: 0.875em;
+  color: #888;
+}
+/**********************list-wrapper *********************/
+.list-wrapper {
+}
+.list-wrapper table > thead > tr > :nth-child(1) {
+  width: 10%;
+}
+.list-wrapper table > thead > tr > :nth-child(3) {
+  width: 15%;
+}
+.list-wrapper table > thead > tr > :nth-child(4) {
+  width: 20%;
+}
+.list-wrapper table > thead > tr > :nth-child(5) {
+  width: 10%;
+}
+
 /********************** 반응형 설정 *********************/
 @media (max-width: 1399px) {
 }
 
 @media (max-width: 1199px) {
+  .wrapper {
+    margin: 0 2em;
+  }
 }
 
 @media (max-width: 991px) {
+  .list-wrapper table > thead > tr > :nth-child(5) {
+    display: none;
+  }
+  .list-wrapper table > tbody > tr > :nth-child(5) {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -82,7 +133,31 @@ body {
   .header-wrapper .navi-wrap .navi.bt-login::after {
     content: '';
   }
+  .list-wrapper table > thead > tr > :nth-child(4) {
+    display: none;
+  }
+  .list-wrapper table > tbody > tr > :nth-child(4) {
+    display: none;
+  }
 }
 
 @media (max-width: 575px) {
+  .list-wrapper table > thead > tr > :nth-child(4) {
+    display: none;
+  }
+  .list-wrapper table > tbody > tr > :nth-child(4) {
+    display: none;
+  }
+  .list-wrapper table > thead > tr > :nth-child(1) {
+    display: none;
+  }
+  .list-wrapper table > tbody > tr > :nth-child(1) {
+    display: none;
+  }
+  .list-wrapper table > thead > tr > :nth-child(3) {
+    display: none;
+  }
+  .list-wrapper table > tbody > tr > :nth-child(3) {
+    display: none;
+  }
 }
