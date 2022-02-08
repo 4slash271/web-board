@@ -24,12 +24,34 @@ body {
 }
 .header-wrapper .navi-wrap .navi {
   padding: 1.5em;
+  margin-left: 0.5em;
+  cursor: pointer;
 }
 .header-wrapper .navi-wrap .navi:hover {
   background-color: rgb(140, 169, 206);
 }
 .header-wrapper .navi-wrap .navi.bt-logout {
   display: none;
+}
+.header-wrapper .navi-wrap .info-wrap {
+  display: flex;
+  align-items: center;
+  display: none;
+}
+.header-wrapper .navi-wrap .info-wrap .photo {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin-right: 0.5em;
+  overflow: hidden;
+}
+.header-wrapper .navi-wrap .info-wrap .photo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.header-wrapper .navi-wrap .info-wrap .email {
+  font-size: 1.125em;
 }
 /********************** 반응형 설정 *********************/
 @media (max-width: 1399px) {
