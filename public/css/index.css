@@ -15,6 +15,9 @@ body {
   padding: 0.5em;
   font-size: 2em;
 }
+.header-wrapper .logo::after {
+  content: 'Firebase Board';
+}
 .header-wrapper .logo i {
   font-size: 0.875em;
 }
@@ -32,6 +35,12 @@ body {
 }
 .header-wrapper .navi-wrap .navi.bt-logout {
   display: none;
+}
+.header-wrapper .navi-wrap .navi.bt-logout::after {
+  content: 'Log Out';
+}
+.header-wrapper .navi-wrap .navi.bt-login::after {
+  content: 'Sign In';
 }
 .header-wrapper .navi-wrap .info-wrap {
   display: flex;
@@ -64,6 +73,15 @@ body {
 }
 
 @media (max-width: 767px) {
+  .header-wrapper .logo::after {
+    content: 'FB Board';
+  }
+  .header-wrapper .navi-wrap .navi.bt-logout::after {
+    content: '';
+  }
+  .header-wrapper .navi-wrap .navi.bt-login::after {
+    content: '';
+  }
 }
 
 @media (max-width: 575px) {
